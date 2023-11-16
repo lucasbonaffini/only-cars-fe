@@ -1,0 +1,140 @@
+.full-gallery-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.full-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-items: start;
+    height: auto;
+}
+
+.full-gallery-grid-mobile {
+    display: none;
+}
+
+.carousel li {
+    cursor: pointer;
+}
+
+@media (max-width: 1023px) {
+    .full-gallery-grid {
+        display: none;
+    }
+
+    .full-gallery-grid-mobile {
+        display: flex;
+        justify-content: center;
+		flex-direction: column;
+        align-items: center;
+		width: 99vw;
+    }
+
+    .selected {
+        background-color: rgba(255, 255, 255, 0.028);
+        border-radius: 10px;
+        border: none;
+    }
+
+    .carousel-slide {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        max-height: 60vh;
+		max-width: 80vw;
+    }
+    .carousel img {
+        height: 500px;
+    }
+
+    .image-container {
+        width: 60vw;
+    }
+
+    .full-gallery-image {
+        max-width: 90vw;
+        max-height: 50%;
+        object-fit: contain;
+    }
+
+    .carousel.carousel-slider {
+        max-height: 500px;
+    }
+}
+
+.full-gallery-grid>div {
+    width: 450px;
+    height: 400px;
+
+}
+
+.full-gallery-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    border: transparent 1px solid;
+    image-orientation: from-image;
+}
+
+.full-gallery-image:hover {
+    border: #0056b3 1px solid;
+}
+
+@media (max-height: 1000px) {
+
+	.full-gallery-grid>div {
+        width: 400px;
+        height: 350px;
+    
+    }
+}
+
+@media (max-height: 900px) {
+
+	.full-gallery-grid>div {
+        width: 350px;
+        height: 300px;
+    
+    }
+}
+
+@media (max-height: 800px) {
+
+	.full-gallery-grid>div {
+        width: 300px;
+        height: 250px;
+    
+    }
+}
+
+@media (max-height: 700px) {
+
+	.full-gallery-grid>div {
+        width: 250px;
+        height: 200px;
+    
+    }
+}
+
+@media (max-height: 600px) {
+
+	.full-gallery-grid>div {
+        width: 200px;
+        height: 150px;
+    
+    }
+}
+

@@ -1,0 +1,55 @@
+body {
+	margin: 0;
+	font-family: -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+		"Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+.recom {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(300px, 1fr));
+	place-items: center;
+}
+
+.main {
+	/* display: flex;
+	flex-direction: column; */
+}
+
+.pagination {
+	width: 100%;
+	position: absolute;
+	bottom: 3%;
+	right: 0;
+	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.buttonDisabled {
+	pointer-events: none;
+	opacity: 0.3;
+}
+
+.pagination > button {
+	margin: 0px 4px;
+	border: none;
+	border-radius: 100px;
+	font-size: medium;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.pagination > button.activeButton {
+	background-color: rgba(42, 103, 140, 0.5);
+}
+
+.pagination > button:hover:not(.activeButton) {
+	background-color: rgba(42, 103, 140, 0.5);
+}
+
+@media (max-width: 1023px) {
+	.recom {
+		grid-template-columns: repeat(1, minmax(400px, 1fr));
+	}
+}

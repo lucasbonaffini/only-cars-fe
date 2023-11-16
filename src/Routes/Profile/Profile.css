@@ -1,0 +1,185 @@
+.user-section::before {
+	content: "";
+	background-image: url("../../img/happy-family.jpg");
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+.user-section {
+	height: 85vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.user-input::placeholder {
+	color: #ccc;
+	bottom: 10px;
+	position: absolute;
+}
+
+.user-form {
+	width: 25%;
+	min-width: 400px;
+	background-color: #fafafa;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	position: relative;
+	position: absolute;
+	right: 5%;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.user-title {
+	font-size: 28px;
+	color: #333;
+	font-weight: 600;
+	letter-spacing: -1px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-top: 1rem;
+	margin-bottom: 0;
+}
+
+.user-title::before,
+.user-title::after {
+	margin-top: 0.25rem;
+	position: absolute;
+	content: "";
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	left: -25px;
+	background-color: #ccc;
+}
+
+.user-title::before {
+	width: 18px;
+	height: 18px;
+	background-color: #ccc;
+}
+
+.user-title::after {
+	width: 18px;
+	height: 18px;
+	animation: pulse 1s linear infinite;
+}
+.user-title {
+	font-size: 1.5rem;
+}
+
+.user-message,
+.user-signin {
+	color: rgba(88, 87, 87, 0.822);
+	font-size: 11px;
+	max-width: 50ch;
+}
+
+.user-signin {
+	text-align: center;
+}
+
+.user-signin a {
+	color: #333;
+}
+
+.user-signin a:hover {
+	text-decoration: underline #333;
+}
+
+.user-form label {
+	position: relative;
+	margin: 0;
+	padding: 0 3%;
+}
+
+.user-form .user-input {
+	width: 100%;
+	height: 25px;
+	outline: 0;
+	border: 1px solid rgba(105, 105, 105, 0.397);
+	border-radius: 4px;
+	font-size: 1rem;
+	font-weight: 500;
+	width: 350px;
+}
+
+.user-form label .user-input + span {
+	position: absolute;
+	left: 25px;
+	top: 20px;
+	color: grey;
+	font-size: 0.9em;
+	cursor: text;
+	transition: 0.3s ease;
+	top: -10px;
+	font-size: 1rem;
+	font-weight: 600;
+	color: #333;
+}
+
+.user-form label .user-input:placeholder-shown + span {
+	top: 8px;
+	font-size: 0.9em;
+}
+
+.user-form label .user-input:focus + span,
+.user-form label .user-input:valid + span {
+	top: -10px;
+	font-size: 1rem;
+	font-weight: 600;
+	color: royalblue;
+}
+
+.user-form label .user-input:valid + span {
+	color: green;
+}
+
+.user-submit {
+	border: none;
+	outline: none;
+	background-color: royalblue;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 16px;
+	width: 50%;
+}
+
+.user-submit:hover {
+	background-color: rgb(56, 90, 194);
+}
+.error-message {
+	color: red;
+	font-size: 1rem;
+	background-color: rgba(223, 23, 23, 0.2);
+	padding: 0.5rem;
+	border-radius: 5px;
+	border: 1px solid red;
+}
+
+@keyframes pulse {
+	from {
+		transform: scale(0.9);
+		opacity: 1;
+	}
+
+	to {
+		transform: scale(1.8);
+		opacity: 0;
+	}
+}
+.user-figure img {
+	width: 300px;
+}

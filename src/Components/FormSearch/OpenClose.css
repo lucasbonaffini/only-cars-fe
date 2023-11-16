@@ -1,0 +1,76 @@
+/*------ Settings ------*/
+.openClose {
+	position: absolute;
+	top: -2px;
+	right: -46px;
+	background-color: rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(20px) saturate(180%);
+	border-radius: 0 8px 8px 0;
+	border: 1px solid #ccc;
+	padding: 0.25rem;
+	display: grid;
+	place-items: center;
+	display: none;
+}
+.container {
+	--color: #;
+	--size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+	font-size: var(--size);
+	user-select: none;
+	fill: var(--color);
+	display: grid;
+	margin: 0.5rem;
+}
+
+.container .chevron-right {
+	position: absolute;
+	animation: keyframes-return 0.5s backwards;
+}
+
+/* ------ On check event ------ */
+.container input:checked ~ .chevron-right {
+	animation: keyframes-rotate 0.5s backwards;
+	transform: rotate(180deg);
+}
+
+/* ------ Hide the default checkbox ------ */
+.container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* ------ Animation ------ */
+@keyframes keyframes-rotate {
+	0% {
+		transform: rotate(0deg);
+		opacity: 0;
+	}
+
+	100% {
+		transform: rotate(180deg);
+	}
+}
+
+@keyframes keyframes-return {
+	0% {
+		transform: rotate(180deg);
+		opacity: 0;
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+@media (width < 1330px) {
+	.openClose {
+		display: flex;
+	}
+}

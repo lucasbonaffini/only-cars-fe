@@ -1,0 +1,12 @@
+.card-reservation {
+	max-width: 500px;
+}
+
+.text-reservation {
+	font-size: 1.5rem;
+	font-weight: 400;
+	padding: 1%;
+}
+.check {
+	width: 15%;
+}

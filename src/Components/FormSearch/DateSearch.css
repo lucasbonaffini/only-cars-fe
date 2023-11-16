@@ -1,0 +1,47 @@
+.section2 {
+	display: flex;
+	flex-direction: column;
+}
+.startDate,
+.endDate {
+	height: 30px;
+	font-size: 1rem;
+	width: 43%;
+	margin: 0 0 10px;
+	padding: 8px;
+	border-radius: 4px;
+	color: black;
+	border: 1px solid #ccc;
+}
+.form-search2 {
+	padding: 0 15%;
+	background-color: #fafafa;
+	max-height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: space-between;
+}
+.create-btn {
+	border-radius: 8px;
+	border: black;
+	color: white;
+	font-size: 1.25rem;
+	cursor: pointer;
+	width: 100%;
+	margin: 1% 0;
+   align-items: center;
+   border: 1px solid #ccc;
+}
+.div-reserva {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.error{
+	color: red;
+	font-size: 0.8rem;
+	margin: 0;
+	padding: 0;
+}

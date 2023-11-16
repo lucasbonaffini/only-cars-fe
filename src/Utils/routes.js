@@ -1,0 +1,17 @@
+export const routes = {
+	home: "/",
+	productDetail: "producto/:id",
+	admin: "administracion",
+	productsList: "lista",
+	addProduct: "agregar",
+	category: "categoria",
+	user: "usuario",
+	editProduct: "/administracion/editar/:id",
+	features: "caracteristicas",
+	favorites: "/favs",
+	profile: "/perfil",
+	linkedin: "/linkedin",
+	reservationsHistory: "reservas",
+	reservationOk: "reservaOk",
+	categoryList: "categorias",
+};

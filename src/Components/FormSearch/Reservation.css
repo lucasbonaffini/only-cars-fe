@@ -1,0 +1,50 @@
+.reservation-container {
+	background-color: rgba(0, 0, 0, 0.1);
+	position: fixed;
+	bottom: -1px;
+	left: 0;
+	right: 0;
+	border-radius: 0 0 8px 8px;
+	font-size: 0.75rem;
+	color: black;
+	display: flex;
+	padding: 0;
+	margin: 0;
+	max-height: 50px;
+}
+.reservation-item {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	list-style: none;
+	text-align: left;
+	padding: 0.5rem;
+	border-radius: 0 0 8px 8px;
+}
+.reservation-null {
+	list-style: none;
+	color: red;
+	padding: 0.15rem;
+	font-size: 0.75rem;
+	border-radius: 0 0 8px 8px;
+}
+.container-btn {
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	gap: 2px;
+}
+.btn-reservation,
+.btn-pay {
+	max-width: 75px;
+	margin: 0;
+	margin-left: 0.5rem;
+	padding: 0.25rem;
+}
+.btn-reservation {
+	background-color: red;
+}
+.btn-pay {
+	background-color: green;
+}

@@ -1,0 +1,97 @@
+.checkbox-container1 {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.checkbox-container1 > p{
+	margin: 0;
+	padding: 0;
+	font-size: .85rem;
+}
+
+.cbx,
+.cbx2 {
+	-webkit-perspective: 20;
+	perspective: 20;
+	border-radius: 4px;
+	transform: translate3d(0, 0, 0);
+	cursor: pointer;
+	transition: all 0.3s ease;
+	margin: 0;
+}
+
+.cbx:hover,
+.cbx:hover {
+	border-color: #ccc;
+}
+
+.flip,
+.fip2 {
+	display: block;
+	transition: all 0.4s ease;
+	transform-style: preserve-3d;
+	position: relative;
+	width: 20px;
+	height: 20px;
+}
+
+#cbx,
+#cbx2 {
+	display: none;
+}
+
+#cbx:checked + .cbx,
+#cbx2:checked + .cbx2 {
+	border-color: #0b76ef;
+}
+
+#cbx:checked + .flip,
+#cbx2:checked + .flip2 {
+	transform: rotateY(180deg);
+}
+
+.front,
+.back,
+.front2,
+.back2 {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	border-radius: 2px;
+}
+
+.front,
+.front2 {
+	background: #fff;
+	border-radius: 4px;
+
+	z-index: 1;
+	border: 1px solid #0b76ef;
+}
+
+.back,
+.back2 {
+	transform: rotateY(180deg);
+	background: #0b76ef;
+	text-align: center;
+	color: #fff;
+	line-height: 20px;
+	box-shadow: 0 0 0 1px #0b76ef;
+}
+
+.back svg,
+.back2 svg {
+	margin-top: 3px;
+	fill: none;
+}
+
+.back svg path,
+.back2 svg path {
+	stroke: #fff;
+	stroke-width: 2.5;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}

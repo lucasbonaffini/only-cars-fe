@@ -1,0 +1,28 @@
+.panel_error {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20% 10% 25%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    
+}
+
+.btn_error {
+    display: flex;
+    padding: 1rem 2.8rem;
+    background: #0056b3;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem #0056b3;
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    letter-spacing: .1rem;
+    font-weight: 700;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.btn_error:hover {
+    background: rgba(42, 103, 140, 0.25);
+    box-shadow: none;
+}

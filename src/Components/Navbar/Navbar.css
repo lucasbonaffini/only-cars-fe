@@ -1,0 +1,86 @@
+nav {
+	display: flex;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: 60px;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	backdrop-filter: blur(20px) saturate(180%);
+	background-color: rgba(255, 255, 255, 0.5);
+	z-index: 15;
+}
+
+.navButton {
+	margin-right: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button-container button,
+.user-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3px;
+	margin: 0.2rem;
+	border-radius: 8px;
+	color: white;
+	cursor: pointer;
+	font-size: 0.85rem;
+	font-weight: 500;
+	padding: 0.5rem;
+}
+.user-btn > span {
+	font-size: 0.85rem;
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.button-container button .icon,
+.user-btn .user-icon {
+	font-size: 1rem;
+}
+.navButton button:hover {
+	background-color: #0056b3;
+	color: white;
+}
+
+a {
+	display: flex;
+	cursor: pointer;
+	justify-content: center;
+}
+
+.menu {
+	margin-top: 0.1rem;
+}
+
+.item-menu {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	font-size: 1.2rem;
+	cursor: pointer;
+	transition: all ease-in-out;
+	&:hover {
+		background-color: #f0f0f0;
+	}
+	@media screen and (max-width: 768px) {
+		font-size: 1rem;
+		margin: 0 0.5rem;
+	}
+}
+.item-menu .icon {
+	font-size: 1.25rem;
+	margin-right: 0.25rem;
+}
